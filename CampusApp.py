@@ -85,37 +85,3 @@ panel.pack(side = BOTTOM)
 
 
 screen.mainloop()
-					print (line)
-		flag = 1
-	
-	if flag == 0:
-		not_valid = tk.Label(screen, text="Not A Valid Input, Search Again")
-		not_valid.place(x=625, y=25)
-		print("Not a valid input")
-	
-	floors_file.close()
-
-
-# screen title and size
-screen.title("Campus")
-screen.geometry("930x610")
-
-# What can be searched for
-title_question = tk.Label(screen, text="Classes to Search:")
-title_question.pack(side = TOP)
-
-
-# Entry Box
-entry_box = tk.Entry(screen)
-entry_box.pack(side = TOP)
-
-# Search Button
-search_button = tk.Button(screen, text="Search", bg="Blue",command=search)
-search_button.place(x = 550, y = 20)
-
-img = ImageTk.PhotoImage(Image.open("campus.png"))
-panel = tk.Label(screen, image = img)
-panel.pack(side = BOTTOM)
-
-
-screen.mainloop()
